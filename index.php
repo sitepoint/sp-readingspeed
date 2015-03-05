@@ -20,7 +20,7 @@ class ReadingSpeed {
 
   static public function init() {
     // Action to save reading speed when a post is saved
-    add_action( 'save_post', array( __CLASS__, 'wpm_update_post' ), 10, 2 );
+    add_action( 'save_post', array( __CLASS__, 'setReadingSpeed' ), 10, 2 );
   }
 
   /**
@@ -29,7 +29,7 @@ class ReadingSpeed {
    * @param $post_id int
    * @param $post object
    **/
-  static function wpm_update_post( $post_id, $post ) {
+  static function setReadingSpeed( $post_id, $post ) {
     update_post_meta($post->ID, "sp_reading_speed", ReadingSpeed::calculateReadingSpeed($post));
   }
 

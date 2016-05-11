@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Reading Speed
-Plugin URI: http://www.sitepoint.com
+Plugin URI: https://www.sitepoint.com
 Description: Calculate Reading Speed of an article
 Version: 1.0
 Author: Jude Aakjaer
